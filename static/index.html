@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="validate.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Template</h1>
+
+        <p>Register new user.</p>
+        <div id="logo">
+            <img src="www.png" class="fixed-size" width="100px" />
+        </div>
+
+        <div id="success"></div>
+
+        <div id="body-form">
+            <form id="form" action="http://localhost:3000/submit" method="post">
+                <label for="fname">First name:</label>
+                <div id="err_fname" class="error"></div><br>
+                <input type="text" id="fname" name="fname">
+                <br>
+
+                <label for="lname">Last name:</label>
+                <div id="err_lname" class="error"></div><br>
+                <input type="text" id="lname" name="lname"><br>
+                <br />
+
+                <label for="color">Choose your color:</label>
+                <div id="err_color" class="error"></div><br>
+                <input type="color" id="color" name="color"><br>
+                <br />
+
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Accept terms:</label>
+                <div id="err_agree" class="error"></div><br>
+                <br>
+
+                <input type="checkbox" id="validate" name="validate">
+                <label for="validate">Allow frontend validation:</label>
+                <div id="err_validate" class="error"></div><br>
+                <br>
+                <button onclick="validateForm()" type="button">Submit form</button>
+            </form>
+
+            <div id="success" color="black"></div>
+
+        </div>
+    </div>
+</body>
+</html>

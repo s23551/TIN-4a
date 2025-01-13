@@ -1,0 +1,22 @@
+
+div#body-form {
+    margin-left: 150px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.error {
+    background-color: red;
+    color: lightgray;
+}
+
+fixed-size {
+    width: 100px;
+    height: 100px;
+}
